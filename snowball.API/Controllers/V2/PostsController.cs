@@ -1,6 +1,5 @@
 ﻿using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
-using snowball.Domain.Model;
 
 namespace snowball.API.Controllers.v2
 {
@@ -13,7 +12,7 @@ namespace snowball.API.Controllers.v2
         [Route("{id}")]
         public IActionResult GetById(int id)
         {
-            var post = new Post
+            var post = new 
             {
                 Id = id,
                 Text = "Hello universe!"
