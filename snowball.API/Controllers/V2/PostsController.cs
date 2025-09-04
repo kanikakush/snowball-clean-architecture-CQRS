@@ -18,7 +18,7 @@ namespace snowball.API.Controllers.v2
                 Id = id,
                 Text = "Hello universe!"
             };
-            return Ok();
+            return Ok(post);
         }
     }
 }
