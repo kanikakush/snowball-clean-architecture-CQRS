@@ -1,0 +1,6 @@
+@snowball.API_HostAddress = http://localhost:5238
+
+GET {{snowball.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

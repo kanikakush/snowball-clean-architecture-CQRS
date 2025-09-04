@@ -1,0 +1,72 @@
+﻿# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+*.tmp
+*.bak
+*.log
+
+# VS files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains IDE
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+*.nuget.props
+*.nuget.targets
+
+# Azure build artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# dotCover
+*.dotCover
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Publish output
+publish/
+out/
+
+# .NET Core
+*.dll
+*.exe
+*.pdb
+*.cache
+*.config
+*.dbmdl
+*.bak
+*.backup
+*.mdf
+*.ldf
+
+# Others
+*.swp
+*~
