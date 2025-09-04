@@ -2,21 +2,22 @@
 using Microsoft.AspNetCore.Mvc;
 using static snowball.API.ApiRoutes;
 
-
 namespace snowball.API.Controllers.V1
 {
     [ApiVersion("1.0")]
     [Route(ApiRoutes.BaseRoute)]
-    [ApiController]    
-    public class PostsController : Controller
+    [ApiController]
+    public class UserProfilesController : Controller
     {
+        public UserProfilesController() { }
+
         [HttpGet]
-        [Route(Posts.GetById)]
-        public IActionResult GetById(int id)
+        [Route(UserProfiles.GetAllProfiles)]
+        public IActionResult GetAllProfiles()
         {
-            var post = new 
+            var post = new
             {
-                Id = id,
+                //Id = id,
                 Text = "Hello World!"
             };
             return Ok(post);

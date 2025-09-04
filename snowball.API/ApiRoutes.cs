@@ -1,0 +1,23 @@
+﻿namespace snowball.API
+{
+    public class ApiRoutes
+    {
+        public const string BaseRoute = "api/v{version:apiVersion}";
+        public class UserProfiles
+        {
+            public const string GetAllProfiles = BaseRoute + "/";
+            public const string Create = BaseRoute + "/userprofiles";
+            public const string Update = BaseRoute + "/userprofiles/{id}";
+            public const string Delete = BaseRoute + "/userprofiles/{id}";
+        }
+        public class Posts
+        {
+            public const string GetById = BaseRoute + "/{id}";
+            public const string Create = BaseRoute + "/posts";
+            public const string Update = BaseRoute + "/posts/{id}";
+            public const string Delete = BaseRoute + "/posts/{id}";
+            public const string Like = BaseRoute + "/posts/{id}/like";
+            public const string Unlike = BaseRoute + "/posts/{id}/unlike";
+        }
+    }
+}
