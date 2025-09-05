@@ -5,10 +5,11 @@
         public const string BaseRoute = "api/v{version:apiVersion}";
         public class UserProfiles
         {
-            public const string GetAllProfiles = BaseRoute + "/";
-            public const string Create = BaseRoute + "/userprofiles";
-            public const string Update = BaseRoute + "/userprofiles/{id}";
-            public const string Delete = BaseRoute + "/userprofiles/{id}";
+            public const string GetAllProfiles = BaseRoute + "/userprofiles/getAll";
+            public const string GetById = BaseRoute + "/userprofiles/GetById/{id}";
+            public const string Create = BaseRoute + "/userprofiles/Create";
+            public const string Update = BaseRoute + "/userprofiles/Update/{id}";
+            public const string Delete = BaseRoute + "/userprofiles/Delete/{id}";
         }
         public class Posts
         {

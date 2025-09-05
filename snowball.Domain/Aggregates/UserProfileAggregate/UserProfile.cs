@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace snowball.Domain.Aggregates.PostAggregate
+namespace snowball.Domain.Aggregates.UserProfileAggregate
 {
     public class UserProfile
     {

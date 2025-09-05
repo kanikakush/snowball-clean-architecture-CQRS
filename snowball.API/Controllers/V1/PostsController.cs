@@ -1,5 +1,8 @@
 ﻿using Asp.Versioning;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using snowball.API.Contracts.UserProfile.Requests;
+using snowball.Application.UserProfiles.Queries;
 using static snowball.API.ApiRoutes;
 
 
@@ -10,10 +13,17 @@ namespace snowball.API.Controllers.V1
     [ApiController]    
     public class PostsController : Controller
     {
+        private readonly ILogger<PostsController> _logger;
+        private readonly IMediator _mediator;
+        public PostsController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
         [HttpGet]
-        [Route(Posts.GetById)]
+        [Route("GetById")]
         public IActionResult GetById(int id)
         {
+            //var query = new GetUserProfileByIdQuery { UserProfileID = Guid.Parse(id)};
             var post = new 
             {
                 Id = id,
@@ -21,5 +31,6 @@ namespace snowball.API.Controllers.V1
             };
             return Ok(post);
         }
+       
     }
 }

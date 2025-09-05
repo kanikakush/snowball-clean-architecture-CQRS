@@ -1,4 +1,6 @@
 ﻿
+using snowball.Domain.Aggregates.UserProfileAggregate;
+
 namespace snowball.Domain.Aggregates.PostAggregate
 {
     public class Post

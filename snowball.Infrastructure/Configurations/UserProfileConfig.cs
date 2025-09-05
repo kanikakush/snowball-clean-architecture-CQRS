@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using snowball.Domain.Aggregates.PostAggregate;
+using snowball.Domain.Aggregates.UserProfileAggregate;
 
 namespace snowball.Infrastructure.Configurations
 {

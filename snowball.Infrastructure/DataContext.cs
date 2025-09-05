@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using snowball.Domain.Aggregates.PostAggregate;
+using snowball.Domain.Aggregates.UserProfileAggregate;
 using snowball.Infrastructure.Configurations;
 
 namespace snowball.Infrastructure

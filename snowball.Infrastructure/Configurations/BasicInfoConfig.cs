@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using snowball.Domain.Aggregates.PostAggregate;
+using snowball.Domain.Aggregates.UserProfileAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
